@@ -1,0 +1,23 @@
+@import "../../style/variables.scss";
+
+
+nav {
+  width: 100%;
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $dark-blue;
+  color: $white;
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .theme {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1rem;
+  }
+}

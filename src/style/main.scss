@@ -1,0 +1,30 @@
+@import "./variables.scss";
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 0 auto;
+  font-size: $homepage-font-size;
+  background-color: $very-dark-blue;
+
+  #root {
+    width: 100%;
+  }
+}
+
+@media (max-width:600px) {
+
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .home {
+    padding-inline: 2rem;
+  }
+
+  img {
+    height: unset !important;
+  }
+}

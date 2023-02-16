@@ -1,0 +1,32 @@
+@import "../../style/variables.scss";
+
+.input {
+  display: flex;
+  align-items: center;
+  width: 30%;
+
+  input,
+  button {
+    padding: 0.75rem 0;
+    border: none;
+    color: $white;
+    background-color: $dark-blue;
+    cursor: pointer;
+  }
+
+  button {
+    width: 15%;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+  }
+
+  input {
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    flex-grow: 1;
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+}
