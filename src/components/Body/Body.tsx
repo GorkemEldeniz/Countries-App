@@ -9,7 +9,7 @@ const Body = () => {
 
   return (
     <div className='body'>
-      {countries.map((country) => <Card key={country.name} name={country?.name} capital={country?.capital} population={country?.population} region={country?.region} flag={country?.flags?.svg} />)}
+      {countries.map((country: any) => <Card key={country?.name} name={country?.name} capital={country?.capital} population={country?.population} region={country?.region} flag={country?.flags?.svg} />)}
     </div>
   )
 }

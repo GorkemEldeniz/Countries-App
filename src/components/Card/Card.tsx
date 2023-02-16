@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 interface Iprops {
   name: string;
-  population?: number;
+  population: number;
   region?: string;
   capital?: string;
   flag?: string;
