@@ -6,7 +6,6 @@ const Nav = () => {
 
   const [darkMode, setDarkMode] = useState(window.matchMedia("(prefers-color-scheme:dark)").matches);
 
-  console.log(darkMode);
 
   return (
     <nav>
