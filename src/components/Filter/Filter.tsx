@@ -39,13 +39,13 @@ const Filter = () => {
 
 
   return (
-    <div className='filter'>
-      <div onClick={() => setIsOpen(pre => !pre)}>{selectedRegion}  {!isOpen ? <i className="fa-solid fa-arrow-down"></i> : <i className="fa-solid fa-arrow-up"></i>}</div>
+    <button className='filter' onClick={() => setIsOpen(pre => !pre)}>
+      <div>{selectedRegion}  {!isOpen ? <i className="fa-solid fa-arrow-down"></i> : <i className="fa-solid fa-arrow-up"></i>}</div>
       {isOpen && <div className='regions'>
         {allRegions.map((region, idx) => <div onClick={() => handleRegion(region)} key={idx}>{region}</div>)}
       </div>}
 
-    </div>
+    </button>
   )
 }
 

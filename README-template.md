@@ -54,7 +54,7 @@ This is a solution to the [REST Countries API with color theme switcher challeng
   <h1>Links</h1>
   <p>
     <a>Solution URL</a> <br/>
-    <a>Site URL</a>
+    <a href="https://countries-app-gamma-two.vercel.app/">Site URL</a>
   </p>
  
 <article>
