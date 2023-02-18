@@ -13,11 +13,11 @@ const Filter = () => {
 
   const allRegions = ["All Regions", ...new Set(data.map(el => el?.region))];
 
-  const handleRegion = (region: string) => {
+  const handleRegion = (e: React.MouseEvent<HTMLButtonElement>, region: string) => {
+    e.stopPropagation();
     setSelectedRegion(region);
     setIsOpen(false);
   }
-
 
   useEffect(() => {
     if (selectedRegion !== "Filter by region") {
@@ -41,9 +41,9 @@ const Filter = () => {
   return (
     <button className='filter' onClick={() => setIsOpen(pre => !pre)}>
       <div>{selectedRegion}  {!isOpen ? <i className="fa-solid fa-arrow-down"></i> : <i className="fa-solid fa-arrow-up"></i>}</div>
-      {isOpen && <div className='regions'>
-        {allRegions.map((region, idx) => <div onClick={() => handleRegion(region)} key={idx}>{region}</div>)}
-      </div>}
+      {isOpen ? <div className='regions'>
+        {allRegions.map((region, idx) => <button onClick={(e) => handleRegion(e, region)} key={idx}>{region}</button>)}
+      </div> : undefined}
 
     </button>
   )
