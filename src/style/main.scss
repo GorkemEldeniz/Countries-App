@@ -2,14 +2,13 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif;
-  max-width: 1440px;
-  min-width: 375px;
-  margin: 0 auto;
   font-size: $homepage-font-size;
   background-color: $very-dark-blue;
-
   #root {
     width: 100%;
+    max-width: 1440px;
+    min-width: 375px;
+    margin: 0 auto;
   }
 }
 
